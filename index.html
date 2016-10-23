@@ -84,12 +84,15 @@
 
 
 
+<meta name="description" content="Let&apos;s coding">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Write tidy code">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Write tidy code">
+<meta property="og:description" content="Let&apos;s coding">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Write tidy code">
+<meta name="twitter:description" content="Let&apos;s coding">
 
 
 
@@ -113,7 +116,7 @@
   <link rel="canonical" href="http://yoursite.com/"/>
 
 
-  <title> Hexo </title>
+  <title> Write tidy code </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="">
@@ -146,7 +149,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Hexo</span>
+      <span class="site-title">Write tidy code</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -173,7 +176,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -183,7 +186,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -236,8 +239,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/10/14/基本语法/" itemprop="url">
-                  基本语法
+                <a class="post-title-link" href="/2016/10/14/java static initialzation blocks/" itemprop="url">
+                  java static initialization bloks
                 </a>
               
             
@@ -249,7 +252,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-10-14T14:52:02+08:00" content="2016-10-14">
               2016-10-14
             </time>
@@ -261,8 +264,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/14/基本语法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/14/基本语法/" itemprop="commentsCount"></span>
+                <a href="/2016/10/14/java static initialzation blocks/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/14/java static initialzation blocks/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -287,7 +290,14 @@
       
         
           
-            
+            <p>static 修饰符 的职责<br>static 关键字用来创建属于某个类的字段或者方法，而不是用来创建类的实例</p>
+<p>为什么使用她？<br>当一些变量创建时，她们都有类的完整的实例变量的副本，存储在内存中的不同位置，<br>有时你会想要创建一些变量使用同一个副本，static 就派上用场了</p>
+<p>如何调用实例变量<br>类名.变量名</p>
+<p>在实例方法中引用实例变量会有一些限制，下面是一些实例变量，类变量以及方法的组合<br>实例方法可以直接访问实例变量和别的实例方法<br>实例方法可以直接访问类变量和类方法<br>类方法可以直接访问类变量和类方法<br>实例方法不可以直接访问实例变量和实例方法，类方法中不能使用 this 关键字</p>
+<p>static 的其他用途<br>使用 static final 定义常量</p>
+<p>为什么要使用 static initializatioin blocks ?<br>一般对字段的初始化会有局限性，因为你无法添加逻辑（错误处理，或者填充一个复杂的数组），实例变量可以在构造器中初始化并且添加一些错误处理，静态代码块类似于静态方法，静态方法可以方便重用</p>
+<p>如何使用 static initializatioin blocks ?<br>在一个类中，你可以使用任意数量的静态初始化块，她们可以出现在类的任意位置，runtime system 会以她们出现的顺序调用她们。</p>
+
           
         
       
@@ -349,7 +359,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-10-14T14:14:06+08:00" content="2016-10-14">
               2016-10-14
             </time>
@@ -458,20 +468,27 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
-               alt="John Doe" />
-          <p class="site-author-name" itemprop="name">John Doe</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+               alt="eccolala" />
+          <p class="site-author-name" itemprop="name">eccolala</p>
+          <p class="site-description motion-element" itemprop="description">Let's coding</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
           
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -509,11 +526,11 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">eccolala</span>
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">

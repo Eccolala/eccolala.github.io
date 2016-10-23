@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java," />
 
 
 
@@ -84,19 +84,25 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="static 修饰符 的职责static 关键字用来创建属于某个类的字段或者方法，而不是用来创建类的实例
+为什么使用她？当一些变量创建时，她们都有类的完整的实例变量的副本，存储在内存中的不同位置，有时你会想要创建一些变量使用同一个副本，static 就派上用场了
+如何调用实例变量类名.变量名
+在实例方法中引用实例变量会有一些限制，下面是一些实例变量，类变量以及方法的组合实例方法可以直接访问实例变量">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/10/14/hello-world/index.html">
+<meta property="og:title" content="java static initialization bloks">
+<meta property="og:url" content="http://yoursite.com/2016/10/14/java static initialzation blocks/index.html">
 <meta property="og:site_name" content="Write tidy code">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-10-14T06:14:06.372Z">
+<meta property="og:description" content="static 修饰符 的职责static 关键字用来创建属于某个类的字段或者方法，而不是用来创建类的实例
+为什么使用她？当一些变量创建时，她们都有类的完整的实例变量的副本，存储在内存中的不同位置，有时你会想要创建一些变量使用同一个副本，static 就派上用场了
+如何调用实例变量类名.变量名
+在实例方法中引用实例变量会有一些限制，下面是一些实例变量，类变量以及方法的组合实例方法可以直接访问实例变量">
+<meta property="og:updated_time" content="2016-10-23T07:08:44.769Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="java static initialization bloks">
+<meta name="twitter:description" content="static 修饰符 的职责static 关键字用来创建属于某个类的字段或者方法，而不是用来创建类的实例
+为什么使用她？当一些变量创建时，她们都有类的完整的实例变量的副本，存储在内存中的不同位置，有时你会想要创建一些变量使用同一个副本，static 就派上用场了
+如何调用实例变量类名.变量名
+在实例方法中引用实例变量会有一些限制，下面是一些实例变量，类变量以及方法的组合实例方法可以直接访问实例变量">
 
 
 
@@ -117,10 +123,10 @@ Quick">
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/14/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/14/java static initialzation blocks/"/>
 
 
-  <title> Hello World | Write tidy code </title>
+  <title> java static initialization bloks | Write tidy code </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="">
@@ -240,7 +246,7 @@ Quick">
             
             
               
-                Hello World
+                java static initialization bloks
               
             
           </h1>
@@ -252,7 +258,7 @@ Quick">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-10-14T14:14:06+08:00" content="2016-10-14">
+            <time itemprop="dateCreated" datetime="2016-10-14T14:52:02+08:00" content="2016-10-14">
               2016-10-14
             </time>
           </span>
@@ -263,8 +269,8 @@ Quick">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/14/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/14/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2016/10/14/java static initialzation blocks/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/14/java static initialzation blocks/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -287,15 +293,13 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>static 修饰符 的职责<br>static 关键字用来创建属于某个类的字段或者方法，而不是用来创建类的实例</p>
+<p>为什么使用她？<br>当一些变量创建时，她们都有类的完整的实例变量的副本，存储在内存中的不同位置，<br>有时你会想要创建一些变量使用同一个副本，static 就派上用场了</p>
+<p>如何调用实例变量<br>类名.变量名</p>
+<p>在实例方法中引用实例变量会有一些限制，下面是一些实例变量，类变量以及方法的组合<br>实例方法可以直接访问实例变量和别的实例方法<br>实例方法可以直接访问类变量和类方法<br>类方法可以直接访问类变量和类方法<br>实例方法不可以直接访问实例变量和实例方法，类方法中不能使用 this 关键字</p>
+<p>static 的其他用途<br>使用 static final 定义常量</p>
+<p>为什么要使用 static initializatioin blocks ?<br>一般对字段的初始化会有局限性，因为你无法添加逻辑（错误处理，或者填充一个复杂的数组），实例变量可以在构造器中初始化并且添加一些错误处理，静态代码块类似于静态方法，静态方法可以方便重用</p>
+<p>如何使用 static initializatioin blocks ?<br>在一个类中，你可以使用任意数量的静态初始化块，她们可以出现在类的任意位置，runtime system 会以她们出现的顺序调用她们。</p>
 
       
     </div>
@@ -316,18 +320,24 @@ Quick">
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag">#java</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/10/14/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/14/java static initialzation blocks/" rel="prev" title="java static initialization bloks">
-                java static initialization bloks <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -353,8 +363,8 @@ Quick">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/14/hello-world/"
-           data-title="Hello World" data-url="http://yoursite.com/2016/10/14/hello-world/">
+      <div class="ds-thread" data-thread-key="2016/10/14/java static initialzation blocks/"
+           data-title="java static initialization bloks" data-url="http://yoursite.com/2016/10/14/java static initialzation blocks/">
       </div>
     
   </div>
@@ -438,7 +448,7 @@ Quick">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
             
           </div>
         </section>
