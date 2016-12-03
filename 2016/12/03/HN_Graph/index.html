@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="java," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,19 +84,25 @@
 
 
 
-<meta name="description" content="static 修饰符 的职责static 关键字用来创建属于某个类的字段或者方法，而不是用来创建类的实例
-为什么使用她？当一些变量创建时，她们都有类的完整的实例变量的副本，存储在内存中的不同位置，有时你会想要创建一些变量使用同一个副本，static 就派上用场了">
+<meta name="description" content="Concepts -&amp;gt; Glossary
+GraphUndirected GraphDirected GraphMinimum Spanning TreesShortest Path…
+Algorithms -&amp;gt; API
+Graph ConstructorDigraph ConstructorDepth-first SearchBreadth-first SearchShortest">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java static initialization bloks">
-<meta property="og:url" content="http://yoursite.com/2016/10/14/java static initialzation blocks/index.html">
+<meta property="og:title" content="Write tidy code">
+<meta property="og:url" content="http://yoursite.com/2016/12/03/HN_Graph/index.html">
 <meta property="og:site_name" content="Write tidy code">
-<meta property="og:description" content="static 修饰符 的职责static 关键字用来创建属于某个类的字段或者方法，而不是用来创建类的实例
-为什么使用她？当一些变量创建时，她们都有类的完整的实例变量的副本，存储在内存中的不同位置，有时你会想要创建一些变量使用同一个副本，static 就派上用场了">
-<meta property="og:updated_time" content="2016-10-23T07:51:12.000Z">
+<meta property="og:description" content="Concepts -&amp;gt; Glossary
+GraphUndirected GraphDirected GraphMinimum Spanning TreesShortest Path…
+Algorithms -&amp;gt; API
+Graph ConstructorDigraph ConstructorDepth-first SearchBreadth-first SearchShortest">
+<meta property="og:updated_time" content="2016-11-04T04:49:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java static initialization bloks">
-<meta name="twitter:description" content="static 修饰符 的职责static 关键字用来创建属于某个类的字段或者方法，而不是用来创建类的实例
-为什么使用她？当一些变量创建时，她们都有类的完整的实例变量的副本，存储在内存中的不同位置，有时你会想要创建一些变量使用同一个副本，static 就派上用场了">
+<meta name="twitter:title" content="Write tidy code">
+<meta name="twitter:description" content="Concepts -&amp;gt; Glossary
+GraphUndirected GraphDirected GraphMinimum Spanning TreesShortest Path…
+Algorithms -&amp;gt; API
+Graph ConstructorDigraph ConstructorDepth-first SearchBreadth-first SearchShortest">
 
 
 
@@ -117,10 +123,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/14/java static initialzation blocks/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/12/03/HN_Graph/"/>
 
 
-  <title> java static initialization bloks | Write tidy code </title>
+  <title>  | Write tidy code </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="en">
@@ -240,7 +246,7 @@
             
             
               
-                java static initialization bloks
+                
               
             
           </h1>
@@ -252,8 +258,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-10-14T14:52:02+08:00" content="2016-10-14">
-              2016-10-14
+            <time itemprop="dateCreated" datetime="2016-12-03T14:27:16+08:00" content="2016-12-03">
+              2016-12-03
             </time>
           </span>
 
@@ -263,8 +269,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/14/java static initialzation blocks/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/14/java static initialzation blocks/" itemprop="commentsCount"></span>
+                <a href="/2016/12/03/HN_Graph/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/03/HN_Graph/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -287,13 +293,13 @@
       
 
       
-        <p>static 修饰符 的职责<br>static 关键字用来创建属于某个类的字段或者方法，而不是用来创建类的实例</p>
-<p>为什么使用她？<br>当一些变量创建时，她们都有类的完整的实例变量的副本，存储在内存中的不同位置，<br>有时你会想要创建一些变量使用同一个副本，static 就派上用场了<br><a id="more"></a><br>如何调用实例变量<br>类名.变量名</p>
-<p>在实例方法中引用实例变量会有一些限制，下面是一些实例变量，类变量以及方法的组合<br>实例方法可以直接访问实例变量和别的实例方法<br>实例方法可以直接访问类变量和类方法<br>类方法可以直接访问类变量和类方法<br>实例方法不可以直接访问实例变量和实例方法，类方法中不能使用 this 关键字</p>
-<p>static 的其他用途<br>使用 static final 定义常量</p>
-<p>为什么要使用 static initializatioin blocks ?<br>一般对字段的初始化会有局限性，因为你无法添加逻辑（错误处理，或者填充一个复杂的数组），实例变量可以在构造器中初始化并且添加一些错误处理，静态代码块类似于静态方法，静态方法可以方便重用</p>
-<p>如何使用 static initializatioin blocks ?<br>在一个类中，你可以使用任意数量的静态初始化块，她们可以出现在类的任意位置，runtime system 会以她们出现的顺序调用她们。</p>
-
+        <!-- HN is a handnote type -->
+<h1 id="Concepts-gt-Glossary"><a href="#Concepts-gt-Glossary" class="headerlink" title="Concepts -&gt; Glossary"></a>Concepts -&gt; Glossary</h1><hr>
+<h4 id="Graph"><a href="#Graph" class="headerlink" title="Graph"></a>Graph</h4><h4 id="Undirected-Graph"><a href="#Undirected-Graph" class="headerlink" title="Undirected Graph"></a>Undirected Graph</h4><h4 id="Directed-Graph"><a href="#Directed-Graph" class="headerlink" title="Directed Graph"></a>Directed Graph</h4><h4 id="Minimum-Spanning-Trees"><a href="#Minimum-Spanning-Trees" class="headerlink" title="Minimum Spanning Trees"></a>Minimum Spanning Trees</h4><h4 id="Shortest-Path"><a href="#Shortest-Path" class="headerlink" title="Shortest Path"></a>Shortest Path</h4><h4 id="…"><a href="#…" class="headerlink" title="…"></a>…</h4><hr>
+<h1 id="Algorithms-gt-API"><a href="#Algorithms-gt-API" class="headerlink" title="Algorithms -&gt; API"></a>Algorithms -&gt; API</h1><hr>
+<h4 id="Graph-Constructor"><a href="#Graph-Constructor" class="headerlink" title="Graph Constructor"></a>Graph Constructor</h4><h4 id="Digraph-Constructor"><a href="#Digraph-Constructor" class="headerlink" title="Digraph Constructor"></a>Digraph Constructor</h4><h4 id="Depth-first-Search"><a href="#Depth-first-Search" class="headerlink" title="Depth-first Search"></a>Depth-first Search</h4><h4 id="Breadth-first-Search"><a href="#Breadth-first-Search" class="headerlink" title="Breadth-first Search"></a>Breadth-first Search</h4><h4 id="Shortest-Path-1"><a href="#Shortest-Path-1" class="headerlink" title="Shortest Path"></a>Shortest Path</h4><h4 id="…-1"><a href="#…-1" class="headerlink" title="…"></a>…</h4><hr>
+<h1 id="Demands-gt-API"><a href="#Demands-gt-API" class="headerlink" title="Demands -&gt;API"></a>Demands -&gt;API</h1><hr>
+<h4 id="…-2"><a href="#…-2" class="headerlink" title="…"></a>…</h4>
       
     </div>
 
@@ -313,24 +319,18 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/java/" rel="tag">#java</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/12/03/work-of-art/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/25/Foundation-Of-Me(1)/" rel="prev" title="Foundation Of Me (1)">
-                Foundation Of Me (1) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -356,8 +356,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/14/java static initialzation blocks/"
-           data-title="java static initialization bloks" data-url="http://yoursite.com/2016/10/14/java static initialzation blocks/">
+      <div class="ds-thread" data-thread-key="2016/12/03/HN_Graph/"
+           data-title="" data-url="http://yoursite.com/2016/12/03/HN_Graph/">
       </div>
     
   </div>
@@ -441,7 +441,7 @@
               
             
             
-              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Concepts-gt-Glossary"><span class="nav-number">1.</span> <span class="nav-text">Concepts -> Glossary</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Graph"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">Graph</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Undirected-Graph"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">Undirected Graph</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Directed-Graph"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">Directed Graph</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Minimum-Spanning-Trees"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">Minimum Spanning Trees</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Shortest-Path"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">Shortest Path</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#…"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">…</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Algorithms-gt-API"><span class="nav-number">2.</span> <span class="nav-text">Algorithms -> API</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Graph-Constructor"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">Graph Constructor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Digraph-Constructor"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">Digraph Constructor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Depth-first-Search"><span class="nav-number">2.0.0.3.</span> <span class="nav-text">Depth-first Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Breadth-first-Search"><span class="nav-number">2.0.0.4.</span> <span class="nav-text">Breadth-first Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Shortest-Path-1"><span class="nav-number">2.0.0.5.</span> <span class="nav-text">Shortest Path</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#…-1"><span class="nav-number">2.0.0.6.</span> <span class="nav-text">…</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Demands-gt-API"><span class="nav-number">3.</span> <span class="nav-text">Demands ->API</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#…-2"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">…</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
